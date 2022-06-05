@@ -11,7 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.Socket;
 
-
 public class ServerGUI extends JFrame implements ActionListener, Thread.UncaughtExceptionHandler, ChatServerListener {
     private static final Logger log4j = LogManager.getLogger();
     private static final int POS_X = 800;
@@ -46,6 +45,7 @@ public class ServerGUI extends JFrame implements ActionListener, Thread.Uncaught
     }
 
     public static void main(String[] args) {
+        //log4j
         log4j.trace("Trace log");
         log4j.debug("Debug log");
         log4j.info("Info log");
